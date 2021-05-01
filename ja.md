@@ -6,25 +6,32 @@
 また、そのための技術や工夫の共有を促進すること。
 
 # Background
-2017年以降、国土地理院のウェブ地図技術を国連地理空間情報課や
-国連グローバルサービスセンターに共有し、
-国連オープン GIS イニシアティブを通じ、
+2017年以降、国土地理院のウェブ地図技術を
+[国連地理空間情報課](https://www.un.org/geospatial/)や
+[国連グローバルサービスセンター](https://www.ungsc.org/)に共有し、
+[国連オープン GIS イニシアティブ](http://unopengis.org/)を通じ、
 技術をともに発展させていくことになった。
 
 # Overview
 ## 1. 生産
-ソースデータを GeoJSON Text Sequence (GeoJSONS) に変換し、
-ベクトルタイル設計情報を注入して Tippecanoe で
-ベクトルタイルの mbtiles パッケージに変換する。
+ソースデータを
+[GeoJSON Text Sequence (GeoJSONS)](https://tools.ietf.org/html/rfc8142)
+に変換し、ベクトルタイル設計情報を注入して
+[Tippecanoe](https://github.com/mapbox/tippecanoe) で
+[ベクトルタイル](https://github.com/mapbox/vector-tile-spec)の
+[MBTiles](https://github.com/mapbox/mbtiles-spec)
+パッケージに変換する。
 
-ソースデータが小規模なら、ベクトルタイルをファイルシステムに展開する。
+ソースデータが小規模なら、
+[tile-join](https://github.com/mapbox/tippecanoe#tile-join)
+を使って MBTiles パッケージをファイルシステムに展開する。
 
 ソースデータが大規模なら、数 GB 程度のモジュールに分割して生産する。
 
 ### 利用者プロジェクト
 ベクトルタイル設計情報。通常、標準入力から与えられる GeoJSONS に
-ベクトルタイル設計属性を追加するなどの加工をし、
-GeoJSONS で標準出力する、Ruby や JavaScript で書かれた
+[Tippecanoe 用の GeoJSON 拡張属性](https://github.com/mapbox/tippecanoe#geojson-extension)
+を追加するなどの加工をGeoJSONS で標準出力する、Ruby や JavaScript で書かれた
 スクリプト。
 
 ## 2. スタイル
