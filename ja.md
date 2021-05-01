@@ -42,21 +42,21 @@ HOCON を用いてレイヤごとにファイルを分割して整理する。�
 ## 3. ホスト
 ベクトルタイルやスタイルファイルなどのプロダクトをウェブにホストする。
 
-ソースデータが
-ベクトルタイルやスタイルファイルなどのプロダクトをウェブにホストする。
-
-ソースデータが小規模なら
+ソースデータが小規模なら、通常、budo でローカルにホストし、
+公開する際には GitHub Pages を用いる。
 
 ## 4. 最適化
-vt-optimizer を使って、
+vt-optimizer を使って、ズームレベルごとの
+ベクトルタイルのサイズ分布を分析し、
+ベクトルタイル設計情報を継続的に改善する。
 
 # System Context Diagram
 ![](system-context-diagram.jpg)
 
 # Supporting Features
-## equinox: UNVT installer for Raspberry Pi OS
+## [equinox: UNVT installer for Raspberry Pi OS](https://github.com/unvt/equinox)
 
-## plow: Server-side image tile rendering
+## [plow: Server-side image tile rendering PoC](https://github.com/hfu/plow)
 
 # Related Projects
-## Adopt Geodata (optgeo) project
+## [Adopt Geodata (optgeo) project](https://github.com/optgeo)
