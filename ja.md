@@ -41,7 +41,7 @@ style.jsonを生成する。
 
 通常、style.json は大規模で複雑になることから、
 [Human-Optimized Config Object Notation (HOCON)](https://github.com/lightbend/config#using-hocon-the-json-superset)
-を用いてレイヤごとにファイルを分割して整理する。。
+を用いてレイヤごとにファイルを分割して整理する。
 
 ### スタイル設計者のプロダクト (Style Designer's product)
 ベクトルタイルスタイル情報。通常、HOCON ファイル （*.conf） のセット。
