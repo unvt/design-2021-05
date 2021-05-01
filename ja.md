@@ -63,9 +63,28 @@ style.jsonを生成する。
 ![](system-context-diagram.jpg)
 
 # Supporting Features
-## [equinox: UNVT installer for Raspberry Pi OS](https://github.com/unvt/equinox)
+## equinox: UNVT installer for Raspberry Pi OS
+UNVT は Unix と Web の設計原則に忠実なツールキットなので、Windows による通常の計算機環境では
+能力構築を行うことが困難でした。
 
-## [plow: Server-side image tile rendering PoC](https://github.com/hfu/plow)
+[equinox](https://github.com/unvt/equinox)は、
+能力構築のためのハードウェアとして [Raspberry Pi](https://raspberrypi.org)
+を利用する場合に、UNVT を簡単に導入するためのスクリプトです。
+
+UNVT の能力構築のために
+[Docker](https://www.docker.com/)
+を用いる場合もあります。
+
+## plow: Server-side image tile rendering PoC
+[plow](https://github.com/hfu/plow)
+は、[PlayWright](https://playwright.dev/)
+を使ってサーバサイド画像タイルレンダリングを行うコンセプト実証です。
+
+サーバサイド画像タイルレンダリングについては、国土地理院で検討を進める予定があります。
 
 # Related Projects
-## [Adopt Geodata (optgeo) project](https://github.com/optgeo)
+## Adopt Geodata (optgeo) project
+[Adopt Geodata (optgeo) project](https://github.com/optgeo)
+は、未だベクトルタイルになっていないオープンジオデータを
+ベクトルタイルにすることで、ベクトルタイルの価値を実証するとともに、
+UNVT を継続的に改善していく、UNVT の併走プロジェクトです。
