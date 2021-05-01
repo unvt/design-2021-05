@@ -8,6 +8,7 @@ The United Nations Vector Tile Toolkit
 # Overview
 
 # System Context Diagram
+![](system-context-diagram.jpg)
 
 # Supporting Features
 ## equinox: UNVT installer for Raspberry Pi OS
