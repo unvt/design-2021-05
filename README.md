@@ -10,7 +10,7 @@ Geospatial Information Authority of Japan (GSI) has been contributing
 to [the UN Open GIS Initiative](http://unopengis.org/) by sharing
 its Web Map expertise with 
 [UN Geospatial](https://www.un.org/geospatial/) including
-[UN Global Service Centre](https://www.ungsc.org/)since 2017. 
+[UN Global Service Centre](https://www.ungsc.org/) since 2017.
 
 # Overview
 ## 1. Produce
