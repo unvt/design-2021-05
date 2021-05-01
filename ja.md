@@ -28,33 +28,35 @@
 
 ソースデータが大規模なら、数 GB 程度のモジュールに分割して生産する。
 
-### 利用者プロジェクト
+### タイル設計者のプロダクト (Tile Designer's product)
 ベクトルタイル設計情報。通常、標準入力から与えられる GeoJSONS に
 [Tippecanoe 用の GeoJSON 拡張属性](https://github.com/mapbox/tippecanoe#geojson-extension)
-を追加するなどの加工をGeoJSONS で標準出力する、Ruby や JavaScript で書かれた
+を追加するなどの加工をして GeoJSONS で標準出力に出力する、Ruby や JavaScript で書かれた
 スクリプト。
 
 ## 2. スタイル
-ベクトルタイル設計情報に合わせて、Mapbox Style に準拠した
+ベクトルタイル設計情報に合わせて、
+[Style Specifications](https://docs.mapbox.com/mapbox-gl-js/style-spec/) に準拠した
 style.jsonを生成する。
 
 通常、style.json は大規模で複雑になることから、
-HOCON を用いてレイヤごとにファイルを分割して整理する。。
+[Human-Optimized Config Object Notation (HOCON)](https://github.com/lightbend/config#using-hocon-the-json-superset)
+を用いてレイヤごとにファイルを分割して整理する。。
 
-### 利用者プロダクト
-ベクトルタイルスタイル情報。
-
-通常、HOCON ファイル（*.conf）のセット。
+### スタイル設計者のプロダクト (Style Designer's product)
+ベクトルタイルスタイル情報。通常、HOCON ファイル （*.conf） のセット。
 
 ## 3. ホスト
 ベクトルタイルやスタイルファイルなどのプロダクトをウェブにホストする。
 
-ソースデータが小規模なら、通常、budo でローカルにホストし、
-公開する際には GitHub Pages を用いる。
+ソースデータが小規模なら、通常、[budo](https://github.com/mattdesl/budo) 
+でローカルにホストし、ウェブ公開する際には
+[GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages)
+を用いる。
 
 ## 4. 最適化
-vt-optimizer を使って、ズームレベルごとの
-ベクトルタイルのサイズ分布を分析し、
+[vt-optimizer](https://github.com/ibesora/vt-optimizer)
+を使って、ズームレベルごとのベクトルタイルのサイズ分布を分析し、
 ベクトルタイル設計情報を継続的に改善する。
 
 # System Context Diagram
