@@ -59,9 +59,6 @@ style.jsonを生成する。
 を使って、ズームレベルごとのベクトルタイルのサイズ分布を分析し、
 ベクトルタイル設計情報を継続的に改善する。
 
-# System Context Diagram
-![](system-context-diagram.jpg)
-
 # Supporting Features
 ## equinox: UNVT installer for Raspberry Pi OS
 UNVT は Unix と Web の設計原則に忠実なツールキットなので、Windows による通常の計算機環境では
@@ -81,6 +78,9 @@ UNVT の能力構築のために
 を使ってサーバサイド画像タイルレンダリングを行うコンセプト実証です。
 
 サーバサイド画像タイルレンダリングについては、国土地理院で検討を進める予定があります。
+
+# System Context Diagram
+![](system-context-diagram.jpg)
 
 # Related Projects
 ## Adopt Geodata (optgeo) project
