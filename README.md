@@ -62,9 +62,6 @@ Analyze zoom-wize size distribution of vector tiles using
 [vt-optimizer](https://github.com/ibesora/vt-optimizer).
 Continuously improve Vector Tile Design Configurations. 
 
-# System Context Diagram
-![](system-context-diagram.jpg)
-
 # Supporting Features
 ## equinox: UNVT installer for Raspberry Pi OS
 UNVT so faithful to design principles of Unix and the Web
@@ -82,6 +79,9 @@ of server-side on-demand image tile rendering using
 [PlayWright](https://playwright.dev/).
 
 GSI is also working on server-side on-demand image tile rendering.
+
+# System Context Diagram
+![](system-context-diagram.jpg)
 
 # Related Projects
 ## Adopt Geodata (optgeo) project
