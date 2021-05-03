@@ -2,8 +2,8 @@
 the United Nations Vector Tile Toolkit (UNVT)
 
 # Purpose
-- Enable everyone to produce, style, host, and optimize vector tiles.
-- Promote sharing of ideas and techniques involved. 
+- Enable everyone to produce, style, host, and optimize Vector Tiles (VT).
+- Promote sharing of ideas and techniques on VT. 
 
 # Background
 Geospatial Information Authority of Japan (GSI) has been contributing
@@ -20,7 +20,7 @@ with injecting Vector Tile Design Configuration.
 
 Feed the sequence into [Tippecanoe](https://github.com/mapbox/tippecanoe)
 to produce [MBTiles](https://github.com/mapbox/mbtiles-spec) of 
-[vector tiles](https://github.com/mapbox/vector-tile-spec).
+[VT](https://github.com/mapbox/vector-tile-spec).
 
 In the case of smaller Source Data, 
 extract MBTiles into a filesystem with
@@ -31,7 +31,7 @@ production will be done in a modular manner where
 Source Data are split into modules of several gigabytes.
 
 ### Tile Designer's product
-Vector Tile Design Configuration. The configuration is usually 
+VT Design Configuration. The configuration is usually 
 a JavaScript or Ruby script which takes a GeoJSONS from standard 
 input, filters features with adding 
 [GeoJSON extention for Tippecanoe](https://github.com/mapbox/tippecanoe#geojson-extension),
@@ -40,17 +40,17 @@ and stream them to standard output as GeoJSONS.
 ## 2. Style
 Generate a `style.json` which conform to
 [Style Specifications](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
-and in harmony with a Vector Tile Design Configuration.
+and in harmony with a VT Design Configuration.
 
 [Human-Optimized Config Object Notation (HOCON)](https://github.com/lightbend/config#using-hocon-the-json-superset)
 was introduced to organize the style configuration layer-wise
 because in most cases a `style.json` is large and complex.
 
 ### Style Designer's product
-Vector Tile Style Configuration. A set of HOCON files (\*.conf) in most cases.
+VT Style Configuration. A set of HOCON files (\*.conf) in most cases.
 
 ## 3. Host
-Host the product such as vector tiles or style files on the Web.
+Host the product on the Web.
 
 In the case of smaller Source Data, first we host the product locally using
 [budo](https://github.com/mattdesl/budo), and then use 
@@ -58,9 +58,9 @@ In the case of smaller Source Data, first we host the product locally using
 to publish it.
 
 ## 4. Optimize
-Analyze zoom-wize size distribution of vector tiles using 
+Analyze zoom-wize size distribution of VT using 
 [vt-optimizer](https://github.com/ibesora/vt-optimizer).
-Continuously improve Vector Tile Design Configurations. 
+Continuously improve VT Design Configurations. 
 
 # Supporting Features
 ## equinox: UNVT installer for Raspberry Pi OS
@@ -89,6 +89,6 @@ GSI is also working on server-side on-demand image tile rendering.
 is a project in tandem with UNVT.
 
 The purpose of the project is to demonstrate the value
-of vector tiles, and to continuously improve UNVT, by 
-creating vector tiles from open geospatial data 
-which are not yet in vector tiles. 
+of VT, and to continuously improve UNVT, by 
+creating VT from open geospatial data 
+which are not yet in VT. 
