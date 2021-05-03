@@ -2,7 +2,7 @@
 the United Nations Vector Tile Toolkit (UNVT)
 
 # Purpose
-- Support everyone to produce, style, host, and optimize vector tiles.
+- Enable everyone to produce, style, host, and optimize vector tiles.
 - Promote sharing of ideas and techniques involved. 
 
 # Background
