@@ -58,7 +58,7 @@ In the case of smaller Source Data, first we host the product locally using
 to publish it.
 
 ## 4. Optimize
-Analyze zoom-wize size distribution of VT using 
+Analyze zoom-wise size distribution of VT using 
 [vt-optimizer](https://github.com/ibesora/vt-optimizer).
 Continuously improve VT Design Configurations. 
 
