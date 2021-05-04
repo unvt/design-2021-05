@@ -14,7 +14,7 @@ its Web Map expertise with
 
 # Overview
 ## 1. Produce
-Convert Soure Data into
+Convert Source Data into
 [GeoJSON Text Sequence (GeoJSONS)](https://tools.ietf.org/html/rfc8142)
 with injecting Vector Tile Design Configuration. 
 
