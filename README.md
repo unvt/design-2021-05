@@ -74,7 +74,7 @@ UNVT capacity building. We have UNVT installer named
 We sometimes use [Docker](https://www.docker.com/), too.
 
 ## plow: Server-side image tile rendering PoC
-VT can even benefit GIS without VT support for its higher update frequency or its flexibility in style. Server-side on-demand image tile rendering is a way to support lagacy GIS without VT support. 
+VT can even benefit GIS without VT support by its higher update frequency or its flexibility in style. Server-side on-demand image tile rendering is a way to support lagacy GIS without VT support. 
 
 [plow](https://github.com/hfu/plow) is a proof-of-concept (PoC)
 of server-side on-demand image tile rendering using
