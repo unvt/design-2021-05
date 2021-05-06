@@ -6,6 +6,12 @@ the United Nations Vector Tile Toolkit (UNVT)
 - Promote sharing of ideas and techniques on VT. 
 
 # Background
+VT technology is a latest web map technology also used by digital platformers.
+
+VT technology is promising especially in environments with limited
+information and communications environment for VT are smaller than traditional image tiles
+and also machine-readable.
+
 Geospatial Information Authority of Japan (GSI) has been contributing
 to [the UN Open GIS Initiative](http://unopengis.org/) by sharing
 its Web Map expertise with 
